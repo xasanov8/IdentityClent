@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <h2>Registration</h2>
+    <form action="#" [formGroup]="form" (ngSubmit)="register()">
+      <div class="input-box">
+        <input type="text"  formControlName="fullname" placeholder="Enter your name" value="form.value.fullname" required id="name">
+      </div>
+      <div class="input-box">
+        <input type="text"  formControlName="email" placeholder="Enter your email" value="form.value.email" required id="email">
+      </div>
+      <div class="input-box">
+        <input type="password" formControlName="password" placeholder="Create password" value="form.value.password" required id="pass">
+      </div>
+      <div class="input-box">
+        <input type="text" formControlName="status" placeholder="Status" value="form.value.status" required id="status">
+      </div>
+      <div class="input-box">
+        <input type="number" formControlName="age" placeholder="Age" value="form.value.age" required id="age">
+      </div>
+      <div class="input-box">
+        <input type="text" formControlName="roles" placeholder="Roles" value="form.value.roles" required id="roles">
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Register Now">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <button [routerLink]="['/login']">Login now</button></h3>
+      </div>
+    </form>
+  </div>
